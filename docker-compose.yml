@@ -1,0 +1,15 @@
+version: '3'
+services:
+    api:
+        build:
+            context: './api'
+            dockerfile: Dockerfile
+            target: base
+        volumes:
+            - ./api:/home/python/app
+        container_name: mlapi-api
+        expose:
+            - '5200'
+        ports:
+            - '5200:5200'
+        command: python app.py
