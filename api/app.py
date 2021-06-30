@@ -11,7 +11,7 @@ async def root():
     return {"Easy": "Money"}
 
 @app.get("/regression")
-def predict_gpa():
+def predict_grade():
     model = pickle.load(open("./models/GPA.bin", "rb"))
     prediction = model.predict(np.array([[0, 17, 2, 0, 1, 1, 55, 55]]))
     return prediction[0]
