@@ -28,16 +28,11 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-Download Data
+### Datasets
 
-`COMING SOON`
+Students Dataset
 
-Preprocess Data
-
-```
-cd data
-python preprocessall.py
-```
+Please download `students.zip` from [this link](https://archive.ics.uci.edu/ml/machine-learning-databases/00320/). Extract the zip file. Copy `student-mat.csv` and `student-por.csv` to `/api/data/GPA/`.
 
 ## Commands
 
