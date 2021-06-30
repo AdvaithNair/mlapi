@@ -13,6 +13,28 @@ It utilizes the following technologies:
 
 All code in this repository is constructed using Python. This is built using Docker, so you will need Docker to run it.
 
+### Feature Overview
+
+There are various datasets, models, and features used throughout this API. Since it's a way for me to introduce myself to machine learning, this API has multiple use cases and does not have one story tying it all together.
+
+-   Grade Predictor
+    -   Endpoint: `/predict/grade`
+    -   Method
+        -   Multivariable Linear Regression
+    -   Inputs
+        -   Sex (F = 1, M = 0)
+        -   Age (0 - 100)
+        -   Absences (0 - 93)
+        -   Failures (0 - 4)
+        -   Extracurricular Activites (Y = 1, N = 0)
+        -   Internet Access (Y = 1, N = 0)
+        -   Midterm 1 Grade (0 - 100)
+        -   Midterm 2 Grade (0 - 100)
+    -   Output
+        -   Final Grade (0 - 100)
+    -   Accuracy
+        -   72.94%
+
 ## Prerequisites
 
 ### Setup
