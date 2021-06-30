@@ -112,7 +112,7 @@ Install New Dependencies
 ```
 source env/bin/activate
 pip install [dependency]
-pip freeze > requirements.txt
+make freeze
 ```
 
 Install All Dependencies
