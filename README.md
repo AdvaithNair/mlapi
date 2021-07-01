@@ -75,6 +75,10 @@ Students Dataset
 
 Please download `students.zip` from [this link](https://archive.ics.uci.edu/ml/machine-learning-databases/00320/). Extract the zip file. Copy `student-mat.csv` to `/api/data/GPA/`.
 
+Heart Disease Dataset
+
+Please download `framingham_heard_disease.csv` from [this link](https://www.kaggle.com/naveengowda16/logistic-regression-heart-disease-prediction). Rename the file to `heart-disease.csv` and copy it to `/api/data/Heart`.
+
 ## Commands
 
 ### API
