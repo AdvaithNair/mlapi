@@ -44,7 +44,7 @@ There are various datasets, models, and features used throughout this API. Since
         -   `midterm1`
             -   Grade the student received on the first midterm
             -   int (0 - 100)
-        -   `midterm2` (0 - 100)
+        -   `midterm2`
             -   Grade the student received on the second midterm
             -   int (0 - 100)
     -   Output
@@ -54,6 +54,51 @@ There are various datasets, models, and features used throughout this API. Since
     -   Accuracy
         -   72.94%
 
+-   Heart Disease Predictor
+    -   Endpoint
+        -   `/predict/heartdisease`
+    -   Method
+        -   Single Class Logistic Regression
+    -   Query Parameter Inputs
+        -   `sex`
+            -   Patient's biological sex
+            -   int (Female = 1, Male = 0)
+        -   `age`
+            -   Patient's current age
+            -   int (0 - 100)
+        -   `daily_cigs`
+            -   Number of cigarettes patient smokes a day
+            -   int (0 - 40)
+        -   `bp_meds`
+            -   Whether or not a patient is on blood pressure medication
+            -   int (Yes = 1, No = 0)
+        -   `stroke_risk`
+            -   Whether or not a patient is at risk for a stroke
+            -   int (Yes = 1, No = 0)
+        -   `diabetes`
+            -   Whether or not a patient has diabetes
+            -   int (Yes = 1, No = 0)
+        -   `cholestrol`
+            -   Patient's standard cholestrol rate
+            -   int (100 - 400)
+        -   `bp`
+            -   Patient's standard blood pressure
+            -   float (50 - 120)
+        -   `bmi`
+            -   Patient's Body Mass Index (BMI)
+            -   float (15 - 40)
+        -   `heart_rate`
+            -   Patient's standard heart rate in BPM
+            -   int (50 - 120)
+    -   Output
+        -   `has_heart_disease`
+            -   Prediction if patient has heart disease or not
+            -   boolean
+        - `confidence`
+            - Probability of prediction being correct
+            - float (0.00 - 1.00)
+    -   Accuracy
+        -   85.38%
 ## Prerequisites
 
 ### Setup
