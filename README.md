@@ -69,13 +69,13 @@ There are various datasets, models, and features used throughout this API. Since
         -   `daily_cigs`
             -   Number of cigarettes patient smokes a day
             -   int (0 - 40)
-        -   `bp_meds`
+        -   `is_on_bp_meds`
             -   Whether or not a patient is on blood pressure medication
             -   int (Yes = 1, No = 0)
-        -   `stroke_risk`
+        -   `has_stroke_risk`
             -   Whether or not a patient is at risk for a stroke
             -   int (Yes = 1, No = 0)
-        -   `diabetes`
+        -   `has_diabetes`
             -   Whether or not a patient has diabetes
             -   int (Yes = 1, No = 0)
         -   `cholestrol`
@@ -95,10 +95,11 @@ There are various datasets, models, and features used throughout this API. Since
             -   Prediction if patient has heart disease or not
             -   boolean
         - `confidence`
-            - Probability of prediction being correct
-            - float (0.00 - 1.00)
+            -   Probability of prediction being correct
+            -   float (0 - 100)
     -   Accuracy
         -   85.38%
+        
 ## Prerequisites
 
 ### Setup
