@@ -13,9 +13,18 @@ It utilizes the following technologies:
 
 All code in this repository is constructed using Python. This is built using Docker, so you will need Docker to run it.
 
-### Feature Overview
+## Features
+
+### Overview
 
 There are various datasets, models, and features used throughout this API. Since it's a way for me to introduce myself to machine learning, this API has multiple use cases and does not have one story tying it all together.
+
+This project contains:
+
+- Grade Predictor
+- Heart Disease Predictor
+
+### Detailed
 
 -   Grade Predictor
     -   Endpoint
@@ -99,7 +108,7 @@ There are various datasets, models, and features used throughout this API. Since
             -   float (0 - 100)
     -   Accuracy
         -   85.38%
-        
+
 ## Prerequisites
 
 ### Setup
