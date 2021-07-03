@@ -1,8 +1,13 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, UploadFile, File
 import uvicorn
 import pickle
 import numpy as np
 import sklearn
+from io import BytesIO
+import tensorflow as tf
+from tensorflow import keras
+from PIL import Image
+from skimage import color
 
 app = FastAPI()
 
@@ -26,6 +31,17 @@ def predict_heart_disease(sex: int = 1, age: int = 15, daily_cigs: int = 0, is_o
     prediction = model.predict(given_input)
     probability = model.predict_proba(given_input)
     return {"has_heart_disease": bool(prediction[0] == 1), "confidence": float(probability[0][0] * 100)}
+
+
+@app.get("/predict/digits")
+async def predict_digits(img: UploadFile = File(...)):
+    img_data = await img.read()
+    new_img = np.array(Image.open(BytesIO(img_data)))
+    new_img_grey = color.rgb2gray(new_img)
+    model = keras.models.load_model('./models/digits.model')
+    # predictions = model.predict([[new_img_grey]])
+    # print(predictions)
+    return True
 
 
 if __name__ == "__main__":
