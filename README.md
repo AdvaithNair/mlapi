@@ -10,6 +10,9 @@ It utilizes the following technologies:
     -   FastAPI
     -   Numpy
     -   Pandas
+    -   TensorFlow
+    -   Keras
+    -   MatplotLib
     -   Sci-Kit Learn
     -   Jupyter Notebook
     -   Pickle
