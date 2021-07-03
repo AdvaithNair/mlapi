@@ -112,6 +112,28 @@ This project contains:
     -   Accuracy
         -   85.38%
 
+-   Handwritten Digit Classifier
+    -   Endpoint
+        -   `/predict/digits`
+    -   Method
+        -   Keras Neural Network
+            - Input Layer: Flattened
+            - Hidden Layer 1 & 2: Dense 128 Node with ReLU Activation
+            - Output Layer: Dense 10 Node with Softmax Activation
+    -   File Body Inputs (NOTE: This is Form Data!!!)
+        -   `img`
+            -   Image File
+            -   FastAPI File
+    -   Output
+        -  `digit`
+            -   Predicted Digit
+            -   int (0 - 9)
+        - `confidence`
+            -   Probability of prediction being correct
+            -   float (0 - 100)
+    -   Accuracy
+        -   96.97%
+
 ## Prerequisites
 
 ### Setup
