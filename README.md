@@ -10,6 +10,9 @@ It utilizes the following technologies:
     -   FastAPI
     -   Numpy
     -   Pandas
+    -   Sci-Kit Learn
+    -   Jupyter Notebook
+    -   Pickle
 
 All code in this repository is constructed using Python. This is built using Docker, so you will need Docker to run it.
 
